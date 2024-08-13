@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+body {
+    background-color: #111;
+}
+
+.main__portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container__portfolio {
+    background-color: #222;
+    padding: 2.2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.icon__container {
+    display: grid;
+}
+
+.span__img {
+    padding-inline: 9rem;
+}
+
+.icon__portfolio {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.class__info {
+    display: grid;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.nav__name {
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav__last-name {
+    color: #adca05;
+}
+
+.post__develober {
+    color: #b8b6b6;
+    display: grid;
+    place-items: center;
+}
+
+.class__contact {
+    display: grid;
+    text-align: center;
+    width: 100%;
+}
+
+.contact__programs {
+    padding: 1.2rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+}
+
+.link__contact {
+    color: #fff;
+    margin-inline: 0.5rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 550px) {
+    .container__portfolio {
+        padding: 1.5rem;
+    }
+    .contact__programs {
+        padding: .9rem;
+    }
+    .link__contact {
+        font-size: 1rem;
+    }
+    .span__img {
+        padding-inline: 6rem;
+    }
+}
