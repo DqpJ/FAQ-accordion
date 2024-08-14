@@ -59,11 +59,11 @@ body {
 }
 
 .from__residence {
-    color: #adca05;
+    color: #b7d608;
 }
 
 .post__develober {
-    color: #b8b6b6;
+    color: #c9c6c6;
     display: grid;
     place-items: center;
 }
@@ -95,6 +95,7 @@ body {
     }
     .link__contact {
         font-size: 1rem;
+        font-weight: 200;
     }
     .span__img {
         padding-inline: 6rem;
