@@ -1,103 +1,178 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-a {
-    text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
 }
 
 body {
     background-color: #111;
 }
 
-.main__portfolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main__selection {
     height: 100vh;
-}
-
-.container__portfolio {
-    background-color: #222;
-    padding: 2.2rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-}
-
-.icon__container {
-    display: grid;
-}
-
-.span__img {
-    padding-inline: 9rem;
-}
-
-.icon__portfolio {
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-}
-
-.class__info {
-    display: grid;
-    text-align: center;
-    gap: 0.5rem;
-}
-
-.nav-name {
-    font-size: 18px;
-    color: #fff;
-}
-
-.from__residence {
-    color: #b7d608;
-}
-
-.post__develober {
-    color: #c9c6c6;
     display: grid;
     place-items: center;
 }
 
-.class__contact {
+.section__box {
+    background: linear-gradient(170deg, #252d37, #191f25);
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+.all__items {
     display: grid;
+    place-items: center;
     text-align: center;
-    width: 100%;
 }
 
-.contact__programs {
-    padding: 1.2rem;
-    background-color: #333;
-    border-radius: 0.5rem;
+.img__container {
+    display: flex;
 }
 
-.link__contact {
+.image__background {
+    background-color: rgba(45, 51, 58, 0.5);
+    padding: 1rem;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+}
+
+.one__text {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
     color: #fff;
-    margin-inline: 0.5rem;
+}
+
+.text__content {
+    color: #747b83;
+    display: grid;
+    gap: .5rem;
+    padding-block: 1rem;
+}
+
+.select__star {
+    padding-block: .9rem;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.background__number {
+    background-color: rgba(45, 51, 58, 0.5);
+    padding: .9rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #a0a5aa;
+    font-weight: 600;
+}
+
+.background__number:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.background__number.no-hover {
+    background-color: #E67E22;
+    color: #fff;
+}
+
+.container__button {
+    display: grid;
+    padding-top: 1rem;
+}
+
+.button__send {
+    background-color: #E67E22;
+    padding-block: .9rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    color: #111;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
+.button__send:hover {
+    background-color: #fff;
+}
+
+.container__image-operations {
+    display: grid;
+    padding-inline: 5.694rem;
+}
+
+.nav__selected {
+    padding: 8px 20px;
+    background-color: #252d37;
+    border-radius: 5rem;
+    color: #b66620;
+}
+
+.span__background {
+    padding-block: 2rem;
+}
+
+.fill__text {
+    padding-block: .6rem;
+    color: #fff;
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 550px) {
-    .container__portfolio {
+.container__text-p {
+    display: grid;
+    color: #747b83;
+    gap: .5rem;
+}
+
+@media (max-width: 635px) {
+    .section__box {
         padding: 1.5rem;
     }
-    .contact__programs {
-        padding: .9rem;
+    .button__send {
+        padding-block: .6rem;
     }
-    .link__contact {
-        font-size: 1rem;
-        font-weight: 200;
+    .one__text {
+        font-size: 1.3rem;
     }
-    .span__img {
-        padding-inline: 6rem;
+    .image__thank {
+        height: 90px;
+    }
+    .container__image-operations {
+        padding-inline: 2rem;
+    }
+    .span__background {
+        padding-block: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .section__box {
+        padding: 1rem;
+    }
+    .button__send {
+        padding-block: .4rem;
+    }
+    .text__content {
+        font-size: .8rem;
+    }
+    .image__thank {
+        height: 80px;
+    }
+    .container__image-operations {
+        padding-inline: 2rem;
+    }
+    .span__background {
+        padding-block: 1rem;
+    }
+    .container__text-p {
+        font-size: .9rem;
     }
 }
